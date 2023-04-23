@@ -207,10 +207,26 @@ public class GoFishGame {
         }
         return false;
     }
+    
+    public static boolean checkDrawDeal(CardHand humanHand){
+        if(humanHand.getHand().size() > 0){
+            return true;
+        }
+        return false;
+    }
+    
+    
+    
+    
+
+  
 }
 
 
     
    
+
+
+
 
 
