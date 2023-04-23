@@ -1,3 +1,10 @@
+/**
+ *
+ * @author Sattar, Farzana
+ * @author Do, Juliean
+ * @author Do, Amber
+ * Submission Date: April 22, 2023
+ */
 package softwareproj;
 
 import java.util.ArrayList;
@@ -43,7 +50,6 @@ import java.util.Scanner;
                 if(first.getValue().equals(second.getValue())){
                     hands.remove(first); 
                     hands.remove(second); 
-                    // needs to increase score for player if matched?
                     int score = currentPlayer.getScore(); 
                     currentPlayer.increaseScore();
                     return true; 
@@ -51,7 +57,6 @@ import java.util.Scanner;
             }
         }
         return false; 
-    
     }
 
     public Player switchTurn(){
@@ -71,4 +76,3 @@ import java.util.Scanner;
             }
         }
     }
-        
