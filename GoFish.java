@@ -3,12 +3,6 @@ package softwareproj;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * @author julieando
- * @author Amber Do
- */
-
-
 //A class to represent a game of Go Fish
 
     public  class GoFish extends Game {
@@ -24,7 +18,6 @@ import java.util.Scanner;
         players = new ArrayList<Player>();
         deck = new CardDeck();
         deck.shuffle();
-        //currentPlayer = switchTurn(); 
     }
 
     public void addPlayer(Player player) {
@@ -32,28 +25,16 @@ import java.util.Scanner;
     }
 
     public void play() {
-        // first shuffle then deal the card
         deck.shuffle();
-        
-        // if deck is not empty, get the Player's name and their hand of cards
         while(!deck.isEmpty()){
-            
             System.out.println(currentPlayer.getName() + " turn"); 
             String playerHands = currentPlayer.display(); 
             System.out.println("This player has: " + playerHands); 
-            
             System.out.println("You ask for: "); 
             String asked = input.next(); 
-            //suppose to ask for cards that they want? then switch Turn if no match?
             switchTurn(); 
         }
-        // display winner + scores; 
-        //declareWinner();
     }
-
-    
-    
-    // compare the cards between player and card. If yes, then remove from player's hand
     public boolean exactCards(ArrayList<Card> hands){
         for(int i= 0; i<hands.size() -1; i++){
             Card first = hands.get(i); 
@@ -72,19 +53,13 @@ import java.util.Scanner;
         return false; 
     
     }
-    
-    // switch the current player to the next player 
+
     public Player switchTurn(){
         currentPlayer = players.get(turn);     
         return currentPlayer; 
     }
-    
-    
-    
-    // declare winner in each situation
 
     public void declareWinner(Player player, Player comp){
-
             if(player.getScore() > comp.getScore()){
                 System.out.println("You have won with a total of:  "+  player.getScore()+ ""
                         + "\nOpponent has lost with a total of: " + comp.getScore()); 
