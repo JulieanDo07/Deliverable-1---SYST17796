@@ -1,24 +1,16 @@
 /**
- * SYST 17796 Project Base code.
- * Students can modify and extend to implement their game.
- * Add your name as an author and the date!
+ *
+ * @author Sattar, Farzana
+ * @author Do, Juliean
+ * @author Do, Amber
+ * Submission Date: April 22, 2023
  */
 package softwareproj;
-
-/**
- * A class that models each Player in the game. Players have an identifier, which should be unique.
- *
- * @author dancye
- * @author Paul Bonenfant Jan 2020
- * 
- */
-
-
 public class Card {
     private Suit suit;
     private Value value;
     
-        /**
+     /**
      * An enumeration of the four suits in a deck of cards
      */
     public enum Suit {
