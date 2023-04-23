@@ -1,8 +1,12 @@
-
+/**
+ *
+ * @author Sattar, Farzana
+ * @author Do, Juliean
+ * @author Do, Amber
+ * Submission Date: April 22, 2023
+ */
 package softwareproj;
-
 import java.util.ArrayList;
-
 
 public class CardHand {
     private ArrayList<Card> handCards; 
