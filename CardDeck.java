@@ -1,7 +1,9 @@
 /**
- * SYST 17796 Project Base code.
- * Students can modify and extend to implement their game.
- * Add your name as an author and the date!
+ *
+ * @author Sattar, Farzana
+ * @author Do, Juliean
+ * @author Do, Amber
+ * Submission Date: April 22, 2023
  */
 package softwareproj;
 
@@ -9,8 +11,6 @@ import softwareproj.Card.Suit;
 import softwareproj.Card.Value;
 import java.util.ArrayList;
 import java.util.Collections;
-
-
 public class CardDeck {
     private ArrayList<Card> cards;
 
@@ -23,9 +23,6 @@ public class CardDeck {
         }
         shuffle(); 
     }
-    
-    
-
     public Card getCards() {
         return cards.get(0); 
     }
@@ -38,7 +35,6 @@ public class CardDeck {
         return cards.remove(0);
     }
     
-    // check if the deck is empty; 
     public boolean isEmpty(){
         return (cards.isEmpty()); 
     }
