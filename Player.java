@@ -1,21 +1,12 @@
 /**
- * SYST 17796 Project Base code.
- * Students can modify and extend to implement their game.
- * Add your name as an author and the date!
+ *
+ * @author Sattar, Farzana
+ * @author Do, Juliean
+ * @author Do, Amber
+ * Submission Date: April 22, 2023
  */
 package softwareproj;
-
 import java.util.ArrayList;
-
-/**
- * A class that models each Player in the game. Players have an identifier, which should be unique.
- *
- * @author dancye
- * @author Paul Bonenfant Jan 2020
- * 
-*/
- //A class to represent a player in a card game
- 
 public abstract class Player {
     private String name;
     private ArrayList<CardHand> hand;
@@ -39,13 +30,11 @@ public abstract class Player {
     public int getScore(){
         return score; 
     }
-    
-    // increase score
+
     public void increaseScore(){
         score++; 
     }
    
-    
     public void discard(Card card) {
         hand.remove(card);
     }
@@ -59,9 +48,5 @@ public abstract class Player {
             return result; 
         }  
         return "Empty Hand"; 
-    
     }
-    
-
-    
 }
