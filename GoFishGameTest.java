@@ -1,29 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
- */
-package softwareproj;
 
+package softwareproj;
 import java.util.ArrayList;
 import static junit.framework.Assert.assertEquals;
 import org.junit.Test;
 import static softwareproj.Card.Suit.CLUBS;
 import static softwareproj.Card.Value.KING;
 
-
-/**
- *
- * @author offic
- */
 public class GoFishGameTest {
-    
     public GoFishGameTest() {
     }
-
-
-    /**
-     * 
-     */
     @Test
     public void testCheckSuitGood() {
         System.out.println("checkLength Good");
@@ -78,8 +63,6 @@ public class GoFishGameTest {
         assertEquals(expResult, result);
     }
     
-    
-    
     @Test
     public void testCheckHandBad() {
         System.out.println("checkHand Bad");
@@ -117,9 +100,4 @@ public class GoFishGameTest {
         boolean result = hand.isEmpty();
         assertEquals(expResult, result);
     }
-    
-    
-    
-  
-    
 }
